@@ -26,7 +26,23 @@
     <!-- main part  -->
 
     <main class="container">
-
+        <section class="col-md-6 mx-auto my-5">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email-input" placeholder="Your email">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password-input" placeholder="Your password">
+              </div>
+              <button class="btn btn-primary rounded-pill" onclick="validatingEmailAndPass()">Submit</button>
+        </section>
+        <div id="succes-message" class="alert alert-success text-center d-none" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <div id="failure-message" class="alert alert-danger text-center d-none" role="alert">
+            A simple danger alert—check it out!
+          </div>
     </main>
 
     <!-- footer part  -->
